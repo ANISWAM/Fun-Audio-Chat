@@ -283,7 +283,10 @@ If you find this model useful, please cite our paper:
   title={Fun-Audio-Chat Technical Report},
   author={Tongyi Fun Team},
   year={2025},
-  url={https://github.com/FunAudioLLM/Fun-Audio-Chat/blob/main/Fun-Audio-Chat-Technical-Report.pdf},
+  eprint={2512.20156},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2512.20156},
 }
 
 @misc{tan2025drvoiceparallelspeechtextvoice,
